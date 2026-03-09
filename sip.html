@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <body>
+        <form action="/">
+            <h2>SIP Calculator</h2> <br>
+            <!-- Amount field -->
+            <input type="number" id="amount" placeholder="Enter the amount :-"> <br>
+            <!-- Duration Field -->
+            <div class="range">
+                <label for="duration">Select Duration (in years)</label>
+                <input type="number" id="duration" name="duration" min="1" max="30" > 
+
+            </div>
+            <!-- Interest Selection -->
+            <div class="range">
+                <label for="interest">Expected Rate of Return (%)</label>
+                <input type="number" id="interest" value="12" name="interest" min="8" max="30" >
+            </div>
+            <!--Place for showing amount invested  -->
+            <h4 class="res">Invested Amount :-</h4>
+            <p id="IM" class="output">......</p>
+            <!--Place for showing expected return  -->
+            <h4 class="res">Expected Return :-</h4>
+            <p id="ER" class="output">....</p> <br>
+            <input type="button" id="submit" value="Submit" onclick="calculate()">
+        </form>
+    </body>
+    <script src="script.js"></script>
+</body>
+</html>
